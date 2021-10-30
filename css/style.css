@@ -1,0 +1,35 @@
+html{
+    scroll-behavior: smooth;
+}
+p{
+    text-align: justify;
+}
+.fondo{
+    background: url("../assets/ppal.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.barra{
+    background: rgb(131, 30, 145);
+    height: 50px !important;
+}
+#descripcion{
+    font-size: 20px;
+    height: 100vh;
+    width: 60%;
+}
+#jugar{
+    height: 100vh;
+}
+.tablero{
+    width: 60%;
+}
+footer{
+    background: rgb(41, 6, 41);
+    color: beige;
+    height: 10vh;
+    text-align: center;
+    padding-top: 25px;
+    margin-top: 60px;
+}

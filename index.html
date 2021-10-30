@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <title>Hello, world!</title>
+    </head>
+
+    <body>
+        <section class="container-fluid fondo d-flex justify-content-center align-items-center">
+            <h1 class="display-4 text-danger">¡ Adivina el Número !</h1>
+        </section>
+        
+
+        <!-- ---------------------------------------------------------- -->
+        <nav class="navbar navbar-expand-md navbar-light sticky-top barra">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- <a class="navbar-brand" href="#">
+                    <img src="assets/logo-b.svg" alt="logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Bootstrap
+                </a> -->
+                <div class="collapse navbar-collapse justify-content-evenly" id="navbarTogglerDemo03">
+                    <div class="nav navbar-nav text-center nav-pills">
+                        <a class="nav-item nav-link" aria-current="page" href="#"><b> Inicio </b></a>
+                        <a class="nav-item nav-link" href="#descripcion"><b> Descripción </b></a>
+                        <a class="nav-item nav-link" href="#jugar"><b> Jugar </b></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- ---------------------------------------------------------------- -->
+
+
+
+
+
+        <section class="container" id="descripcion"> 
+            <h2 class="mt-5 p-5 text-center text-uppercase">Adivina el Número</h2>
+
+            <p>Este proyecto consiste en adivinar un número dentro de un conjunto de 20 números representados por botones. Tras pulsar por primera vez un botón, si no es la respuesta correcta este cambiará el color de su background e inhabilirará los número superiores o inferiores al número correcto respecto al número seleccionado.</p>
+            <br>
+            <p>En los siguientes intentos se realizará el mismo proceso: se marcará el background del botón seleccionado y se reducirá el número de opciones a elegir.</p>
+            <br>
+            <p>Tras dar con la respuesta correcta se mostrará debajo la puntuación obtenida.</p>
+
+        </section>
+
+        <section class="container" id="jugar">
+
+            <h2 class="mt-5 p-5 text-center">¡A Jugar!</h2>
+
+            <h4 class="my-5 text-center">Solo tienes 5 intentos para adivinar el número</h4>
+
+            <div class="container tablero">
+                <div class="row">
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">1</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">2</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">3</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">4</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">5</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">6</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">7</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">8</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">9</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">10</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">11</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">12</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">13</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">14</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">15</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">16</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">17</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">18</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">19</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">20</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">21</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">22</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">23</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">24</button>
+                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">25</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid">
+            <h5 class="text-align-center">2021 - Jhon Fredy Ospina Galeano</h5>
+        </footer>
+
+
+
+        <!-- js -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+
+</html>
