@@ -16,9 +16,11 @@
 
     <body>
         <section class="container-fluid fondo d-flex justify-content-center align-items-center">
-            <h1 class="display-4 text-danger">¡ Adivina el Número !</h1>
+            <a href="#descripcion">
+                <h1 class="uno">¡ Adivina el Número !</h1>
+            </a>
         </section>
-        
+
 
         <!-- ---------------------------------------------------------- -->
         <nav class="navbar navbar-expand-md navbar-light sticky-top barra">
@@ -36,9 +38,9 @@
                 </a> -->
                 <div class="collapse navbar-collapse justify-content-evenly" id="navbarTogglerDemo03">
                     <div class="nav navbar-nav text-center nav-pills">
-                        <a class="nav-item nav-link" aria-current="page" href="#"><b> Inicio </b></a>
-                        <a class="nav-item nav-link" href="#descripcion"><b> Descripción </b></a>
-                        <a class="nav-item nav-link" href="#jugar"><b> Jugar </b></a>
+                        <a class="desp nav-item nav-link" aria-current="page" href="#"><b> Inicio </b></a>
+                        <a class="desp nav-item nav-link" href="#descripcion"><b> Descripción </b></a>
+                        <a class="desp nav-item nav-link" href="#jugar"><b> Jugar </b></a>
                     </div>
                 </div>
             </div>
@@ -49,12 +51,16 @@
 
 
 
-        <section class="container" id="descripcion"> 
+        <section class="container" id="descripcion">
             <h2 class="mt-5 p-5 text-center text-uppercase">Adivina el Número</h2>
 
-            <p>Este proyecto consiste en adivinar un número dentro de un conjunto de 20 números representados por botones. Tras pulsar por primera vez un botón, si no es la respuesta correcta este cambiará el color de su background e inhabilirará los número superiores o inferiores al número correcto respecto al número seleccionado.</p>
+            <p>Este proyecto consiste en adivinar un número dentro de un conjunto de 20 números representados por
+                botones. Tras pulsar por primera vez un botón, si no es la respuesta correcta este cambiará el color de
+                su background e inhabilirará los número superiores o inferiores al número correcto respecto al número
+                seleccionado.</p>
             <br>
-            <p>En los siguientes intentos se realizará el mismo proceso: se marcará el background del botón seleccionado y se reducirá el número de opciones a elegir.</p>
+            <p>En los siguientes intentos se realizará el mismo proceso: se marcará el background del botón seleccionado
+                y se reducirá el número de opciones a elegir.</p>
             <br>
             <p>Tras dar con la respuesta correcta se mostrará debajo la puntuación obtenida.</p>
 
@@ -64,44 +70,97 @@
 
             <h2 class="mt-5 p-5 text-center">¡A Jugar!</h2>
 
-            <h4 class="my-5 text-center">Solo tienes 5 intentos para adivinar el número</h4>
+            <h4 id="intento" class="my-5 text-center">Solo tienes 5 intentos para adivinar el número</h4>
 
             <div class="container tablero">
                 <div class="row">
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">1</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">2</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">3</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">4</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">5</button>
+                    <button type="button" id="1" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('1').classList.add('pulso')">1</button>
+
+                    <button type="button" id="2" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('2').classList.add('pulso')">2</button>
+
+                    <button type="button" id="3" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('3').classList.add('pulso')">3</button>
+
+                    <button type="button" id="4" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('4').classList.add('pulso')">4</button>
+
+                    <button type="button" id="5" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('5').classList.add('pulso')">5</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">6</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">7</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">8</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">9</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">10</button>
+                    <button type="button" id="6" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('6').classList.add('pulso')">6</button>
+
+                    <button type="button" id="7" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('7').classList.add('pulso')">7</button>
+
+                    <button type="button" id="8" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('8').classList.add('pulso')">8</button>
+
+                    <button type="button" id="9" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('9').classList.add('pulso')">9</button>
+
+                    <button type="button" id="10" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('10').classList.add('pulso')">10</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">11</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">12</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">13</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">14</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">15</button>
+                    <button type="button" id="11" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('11').classList.add('pulso')">11</button>
+
+                    <button type="button" id="12" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('12').classList.add('pulso')">12</button>
+
+                    <button type="button" id="13" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('13').classList.add('pulso')">13</button>
+
+                    <button type="button" id="14" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('14').classList.add('pulso')">14</button>
+
+                    <button type="button" id="15" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('15').classList.add('pulso')">15</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">16</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">17</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">18</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">19</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">20</button>
+                    <button type="button" id="16" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('16').classList.add('pulso')">16</button>
+
+                    <button type="button" id="17" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('17').classList.add('pulso')">17</button>
+
+                    <button type="button" id="18" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('18').classList.add('pulso')">18</button>
+
+                    <button type="button" id="19" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('19').classList.add('pulso')">19</button>
+
+                    <button type="button" id="20" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('20').classList.add('pulso')">20</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">21</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">22</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">23</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">24</button>
-                    <button type="button" class="col btn btn-outline-primary my-2 mx-4">25</button>
+                    <button type="button" id="21" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('21').classList.add('pulso')">22</button>
+
+                    <button type="button" id="22" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('22').classList.add('pulso')">22</button>
+
+                    <button type="button" id="23" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('23').classList.add('pulso')">23</button>
+
+                    <button type="button" id="24" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('24').classList.add('pulso')">24</button>
+
+                    <button type="button" id="25" class="col btn btn-outline-primary my-2 mx-3"
+                        onclick="document.getElementById('25').classList.add('pulso')">25</button>
                 </div>
+
+                <!-- <div class="d-flex justify-content-center align-items-center mt-5">
+                    <button type="button" class="reiniciar"
+                        onclick="">
+                        <b>Reiniciar</b>
+                    </button>
+                </div> -->
+
             </div>
         </section>
 
@@ -116,6 +175,7 @@
             integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
             crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 
 </html>
