@@ -17,8 +17,7 @@ p{
     animation: pulse 1.5s infinite;
 }
 .pulso{
-    background: rgb(211, 5, 74);
-    bottom: disabled;
+    background: rgb(211, 5, 74) !important;
 }
 .fondo{
     background: url("../assets/ppal.png");
