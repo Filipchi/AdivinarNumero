@@ -89,12 +89,12 @@ footer{
         padding: 0.5rem 1.5rem;
     }
     .tablero{
-        width: 90%;
+        width: 95%;
     }
     #descripcion{
         font-size: 20px;
         height: 100vh;
-        width: 90%;
+        width: 95%;
     }
     .nav-pills{
         background: rgb(131, 30, 145);
