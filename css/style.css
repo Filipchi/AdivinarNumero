@@ -16,8 +16,30 @@ p{
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
     animation: pulse 1.5s infinite;
 }
-.pulso{
+.flecha{
+    background-image: url("../assets/flecha1.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding: 3rem 3rem;
+    width: 80px;
+    border-radius: 3rem;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+    animation: pulse 1.5s infinite;
+}
+.perdio{
     background: rgb(211, 5, 74) !important;
+}
+.gano{
+    background: rgb(0, 179, 30) !important;
+}
+
+#parrafo{
+    display: none;
+    background: linear-gradient(102deg, #0c60ceb2 40%, #1e64a5b4 60%);
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 3rem;
 }
 .fondo{
     background: url("../assets/ppal.png");
@@ -28,6 +50,12 @@ p{
 .barra{
     background: rgb(131, 30, 145);
     height: 50px !important;
+}
+.barra1{
+    background: rgb(220, 204, 223);
+}
+.menu1{
+    text-align: center;
 }
 #descripcion{
     font-size: 20px;
@@ -40,14 +68,14 @@ p{
 .tablero{
     width: 60%;
 }
-/* .reiniciar{
+#reiniciar{
+    display: none;
     border-radius: 3rem;
     font-size: 17px;
     padding: 0.5rem 5rem;
     background: rgb(189, 67, 158);
-} */
+}
 footer{
-    background: rgb(27, 1, 27);
     color: beige;
     height: 10vh;
     text-align: center;
@@ -68,6 +96,9 @@ footer{
         height: 100vh;
         width: 90%;
     }
+    .nav-pills{
+        background: rgb(131, 30, 145);
+    }
 }
 
 @keyframes pulse {
@@ -76,7 +107,7 @@ footer{
         box-shadow: 0 0 0 0 rgba(256, 256, 256, .1);
     }
     70% {
-        transform: scale(1);
+        transform: scale(1.03);
         box-shadow: 0 0 0 25px rgba(256, 256, 256, 0);
     }
     100% {
